@@ -14,6 +14,7 @@ if (isset($_POST['submitDl']))
     <meta charset="utf-8"/>
 </head>
 <body style=" font-family: 'Hind'">
+    <h1 style=" font-weight: bold; color: #F63439; font-size: 2rem"> Créez votre signatures mail pour La Voix De l'Enfant</h1>
 <p>
     <b style=" color: #FFAF00">Mode d'emploi</b>
 <ol>
