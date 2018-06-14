@@ -13,9 +13,9 @@ if (isset($_POST['submitDl']))
     <meta http-equiv="Content-Type" content="text/html;" />
     <meta charset="utf-8"/>
 </head>
-<body>
+<body style=" font-family: 'Hind'">
 <p>
-    <b>Mode d'emploi</b>
+    <b style=" color: #FFAF00">Mode d'emploi</b>
 <ol>
     <li>Remplir les champs ci-dessous en prenant bien soin de mettre les numéro de téléphone au format <b>+33 (0)X.XX.XX.XX.XX</b>.</li>
     <li>Cliquer sur "Générer".</li>
@@ -23,22 +23,23 @@ if (isset($_POST['submitDl']))
     <li>Ouvrir le fichier sous un navigateur, copier l'ensemble de la signature et la coller dans l'interface <b>Gmail ou hotmail</b>.</li>
 </ol>
 </p>
+<p> <b style=" color: #FFAF00">Formulaire</b> </p>
 <form method="post">
     <label for="prenom">Prénom</label>
-    <input name="prenom" id="prenom" type="text" value="<?php if(isset($_POST['prenom'])):echo $_POST['prenom'];  endif; ?>" /><br />
+    <input name="prenom" id="prenom" type="text" value="<?php if(isset($_POST['prenom'])):echo $_POST['prenom'];  endif; ?>" /><br /><br />
     <label for="nom">Nom</label>
-    <input name="nom" id="nom" type="text" value="<?php if(isset($_POST['nom'])): echo $_POST['nom']; endif; ?>" /><br />
+    <input name="nom" id="nom" type="text" value="<?php if(isset($_POST['nom'])): echo $_POST['nom']; endif; ?>" /><br /><br />
     <label for="poste">Poste</label>
-    <input name="poste" id="poste" type="text" value="<?php if(isset($_POST['poste'])): echo $_POST['poste']; endif; ?>" /><br />
+    <input name="poste" id="poste" type="text" value="<?php if(isset($_POST['poste'])): echo $_POST['poste']; endif; ?>" /><br /><br />
     <label for="email">Email</label>
-    <input name="email" id="email" type="text" value="<?php if(isset($_POST['email'])): echo $_POST['email']; endif; ?>" /><br />
+    <input name="email" id="email" type="text" value="<?php if(isset($_POST['email'])): echo $_POST['email']; endif; ?>" /><br /><br />
     <label for="phone">Phone (format : "+33 (0)x xx xx xx xx")</label>
-    <input name="phone" id="phone" type="text" value="<?php if(isset($_POST['phone'])): echo $_POST['phone']; endif; ?>" /><br />
+    <input name="phone" id="phone" type="text" value="<?php if(isset($_POST['phone'])): echo $_POST['phone']; endif; ?>" /><br /><br />
     <label for="phonedirect">Ligne directe (format : "+33 (0)x xx xx xx xx")</label>
-    <input name="phonedirect" id="phonedirect" type="text" value="<?php if(isset($_POST['phonedirect'])): echo $_POST['phone']; endif; ?>" /><br />
+    <input name="phonedirect" id="phonedirect" type="text" value="<?php if(isset($_POST['phonedirect'])): echo $_POST['phone']; endif; ?>" /><br /><br />
     <label for="fax">Fax (format : "+33 (0)x xx xx xx xx")</label>
-    <input name="fax" id="fax" type="text" value="<?php if(isset($_POST['fax'])): echo $_POST['fax']; endif; ?>" /><br />
-    <input name="submit" type="submit" value="Générer"/>
+    <input name="fax" id="fax" type="text" value="<?php if(isset($_POST['fax'])): echo $_POST['fax']; endif; ?>" /><br /><br />
+    <input style="background-color: #5A6CEA; border-radius: 10px; border: none; height: 30px; width: 200px; color:white; font-weight: bold; margin: auto;" name="submit" type="submit" value="Générer"/>
     <?php
     if (isset($_POST['submit']))
     {
@@ -79,10 +80,11 @@ if (isset($_POST['submitDl']))
         </td>
     </tr>
 </table>
+
 END;
         echo $htmlSig;
-        echo '<input name="signature" type="hidden" value="'.urlencode($htmlSig).'"/>';
-        echo '<input name="submitDl" type="submit" value="Télécharger"/>';
+        echo '<input name="signature" style="background:#5A6CEA;" type="hidden" value="'.urlencode($htmlSig).'"/>';
+        echo '<input style="background-color: #FFAF00; border-radius: 10px; border: none; height: 30px; width: 200px; color:white; font-weight: bold; margin: auto;" name="submitDl" type="submit" value="Télécharger"/>';
     }
     ?>
 </form>
