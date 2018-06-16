@@ -54,13 +54,13 @@ if (isset($_POST['submitDl']))
         <td style="vertical-align: middle; padding: 0; width: 50px"><img style="width: 50px; height: auto"
                                                                          src="img/lvde.png"/>
         </td>
-        <td style="padding-left: 10px"><p style="color: rgb(71, 71, 71);font-size: 13px; font-weight: bold; padding: 0; margin: 0;">
+        <td style="padding-left: 10px"><p style="color: #000000;font-size: 13px; font-weight: bold; padding: 0; margin: 0;">
             <strong>{$_POST['prenom']} {$_POST['nom']}</strong></p>
-            <p style="color: #FFAF00;font-size: 13px; font-weight: bold; padding: 0; margin: 0;"> {$_POST['poste']}</p>
-            <p style="padding: 0; margin: 0;font-size: 11px; color: #4D4D4D">Email : <span style="color: #5A6CEA;">{$_POST['email']}</span> </p>
-            <p style="padding: 0; margin: 0;font-size: 11px; color: #4D4D4D">Fixe : <span style="color: #5A6CEA;">{$_POST['phone']}</span> &nbsp;•&nbsp;
-                Fax : <span style="color: #5A6CEA;">{$_POST['fax']}</span></p>
-            <p style="padding: 0; margin: 0;font-size: 11px; color: #4D4D4D">Ligne directe : <span style="color: #5A6CEA;">{$_POST['phonedirect']}</span> </p>
+            <p style="color: #4D4D4D;font-size: 13px; font-weight: bold; padding: 0; margin: 0;"> {$_POST['poste']}</p>
+            <p style="padding: 0; margin: 0;font-size: 11px; color: #4D4D4D">Email : {$_POST['email']} </p>
+            <p style="padding: 0; margin: 0;font-size: 11px; color: #4D4D4D">Fixe : {$_POST['phone']} &nbsp;•&nbsp;
+                Fax : {$_POST['fax']}</p>
+            <p style="padding: 0; margin: 0;font-size: 11px; color: #4D4D4D">Ligne directe : {$_POST['phonedirect']} </p>
         </td>
     </tr>
     <tr>
@@ -69,7 +69,7 @@ if (isset($_POST['submitDl']))
             <strong>La Voix De L'Enfant</strong></p>
             <p style="padding: 0; margin: 0;font-size: 11px; color: #4D4D4D;">33-35 rue de la Brèche aux Loups - 75012 PARIS</p>
 
-            <p style="padding: 0; margin: 0; color: #5A6CEA;"><a style="text-decoration: none; color: #5A6CEA;" href="https://www.lavoixdelenfant.org">www.lavoixdelenfant.org</a><br>
+            <p style="padding: 0; margin: 0; color: #4D4D4D;"><a style="text-decoration: none; color: #4D4D4D;" href="https://www.lavoixdelenfant.org">www.lavoixdelenfant.org</a><br>
                 <a style="text-decoration: none;" href="https://twitter.com/lavoixdelenfant?lang=fr">
                 <img style="height:20px; width:auto; padding-left:2px; padding-top: 2px" src="img/twitter.png"/>
                 </a>&nbsp;
