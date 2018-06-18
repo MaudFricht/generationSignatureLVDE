@@ -14,11 +14,11 @@ if (isset($_POST['submitDl']))
     <meta charset="utf-8"/>
 </head>
 <body style=" font-family: 'Hind'; margin: 80px;">
-    <h1 style=" font-weight: bold; color: #F63439; font-size: 2rem"> Créez votre signatures mail pour La Voix De l'Enfant</h1></br>
+    <h1 style=" font-weight: bold; color: #F63439; font-size: 2rem"> Créez votre signature mail pour La Voix De l'Enfant</h1></br>
 <p>
     <b style=" color: #FFAF00">Mode d'emploi</b>
 <ol>
-    <li>Remplir les champs ci-dessous en prenant bien soin de mettre les numéro de téléphone au format <b>+33 (0)X.XX.XX.XX.XX</b>.</li>
+    <li>Remplir les champs ci-dessous en prenant bien soin de mettre les numéros de téléphone au format <b>+33 (0)X.XX.XX.XX.XX</b>.</li>
     <li>Cliquer sur "Générer".</li>
     <li>Cliquer sur "Télécharger" pour télécharger le fichier <b>signature-lavoixdelenfant.html</b> qui contient la signature.</li>
     <li>Ouvrir le fichier sous un navigateur, copier l'ensemble de la signature et la coller dans l'interface <b>Gmail ou hotmail</b>.</li>
@@ -40,7 +40,7 @@ if (isset($_POST['submitDl']))
     <input name="phonedirect" id="phonedirect" type="text" value="<?php if(isset($_POST['phonedirect'])): echo $_POST['phone']; endif; ?>" /><br /><br />
     <label for="fax">Fax (format : "+33 (0)x xx xx xx xx")</label>
     <input name="fax" id="fax" type="text" value="<?php if(isset($_POST['fax'])): echo $_POST['fax']; endif; ?>" /><br /><br />
-    <input style="background-color: #5A6CEA; border-radius: 10px; border: none; height: 30px; width: 200px; color:white; font-weight: bold; margin: auto;" name="submit" type="submit" value="Générer"/>
+    <input style="background-color: #5A6CEA; cursor: pointer; border-radius: 10px; border: none; height: 30px; width: 200px; color:white; font-weight: bold; margin: auto;" name="submit" type="submit" value="Générer"/></br></br>
     <?php
     if (isset($_POST['submit']))
     {
@@ -69,13 +69,13 @@ if (isset($_POST['submitDl']))
             <strong>La Voix De L'Enfant</strong></p>
             <p style="padding: 0; margin: 0;font-size: 11px; color: #4D4D4D;">33-35 rue de la Brèche aux Loups - 75012 PARIS</p>
 
-            <p style="padding: 0; margin: 0; color: #4D4D4D;"><a style="text-decoration: none; color: #4D4D4D;" href="https://www.lavoixdelenfant.org">www.lavoixdelenfant.org</a><br>
-                <a style="text-decoration: none;" href="https://twitter.com/lavoixdelenfant?lang=fr">
+            <p style="padding: 0; margin: 0; color: #4D4D4D;"><a target="_blank" style="text-decoration: none; color: #4D4D4D;" href="https://www.lavoixdelenfant.org">www.lavoixdelenfant.org</a><br>
+                <a target="_blank" style="text-decoration: none;" href="https://twitter.com/lavoixdelenfant?lang=fr">
                 <img style="height:20px; width:auto; padding-left:2px; padding-top: 2px" src="img/twitter.png"/>
                 </a>&nbsp;
-                <a style="text-decoration: none" href="https://www.facebook.com/synerghetic.je">
+                <a target="_blank" style="text-decoration: none" href="https://www.facebook.com/synerghetic.je">
                 <img style="height:20px; width:auto; padding-left:2px; padding-top: 2px" src="img/fb.png"/></a>
-                <a style="text-decoration: none" href="https://instagram.com/lavoixdelenfant/">
+                <a target="_blank" style="text-decoration: none" href="https://instagram.com/lavoixdelenfant/">
                 <img style="height:20px; width:auto; padding-left:2px; padding-top: 2px" src="img/insta.png"/></a>
             </p>
         </td>
@@ -85,7 +85,7 @@ if (isset($_POST['submitDl']))
 END;
         echo $htmlSig;
         echo '<input name="signature" style="background:#5A6CEA;" type="hidden" value="'.urlencode($htmlSig).'"/>';
-        echo '<input style="background-color: #FFAF00; border-radius: 10px; border: none; height: 30px; width: 200px; color:white; font-weight: bold; margin: auto;" name="submitDl" type="submit" value="Télécharger"/>';
+        echo '<input style="background-color: #FFAF00; cursor: pointer; border-radius: 10px; border: none; height: 30px; width: 200px; color:white; font-weight: bold; margin: auto;" name="submitDl" type="submit" value="Télécharger"/>';
     }
     ?>
 </form>
