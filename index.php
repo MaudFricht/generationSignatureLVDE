@@ -52,7 +52,7 @@ if (isset($_POST['submitDl']))
 <table style="font-family: 'Hind', 'Arial', sans-serif; padding: 10px;font-size: 12px; min-width: 405px; line-height: 120%;">
     <tr>
         <td style="vertical-align: middle; padding: 0; width: 50px"><img style="width: 50px; height: auto"
-                                                                         src="img/lvde.png"/>
+                                                                         src="https://signature-mail-lvde.herokuapp.com/img/lvde.png"/>
         </td>
         <td style="padding-left: 10px"><p style="color: #000000;font-size: 13px; font-weight: bold; padding: 0; margin: 0;">
             <strong>{$_POST['prenom']} {$_POST['nom']}</strong></p>
@@ -71,12 +71,12 @@ if (isset($_POST['submitDl']))
 
             <p style="padding: 0; margin: 0; color: #4D4D4D;"><a target="_blank" style="text-decoration: none; color: #4D4D4D;" href="https://www.lavoixdelenfant.org">www.lavoixdelenfant.org</a><br>
                 <a target="_blank" style="text-decoration: none;" href="https://twitter.com/lavoixdelenfant?lang=fr">
-                <img style="height:20px; width:auto; padding-left:2px; padding-top: 2px" src="img/twitter.png"/>
+                <img style="height:20px; width:auto; padding-left:2px; padding-top: 2px" src="https://signature-mail-lvde.herokuapp.com/img/twitter.png"/>
                 </a>&nbsp;
                 <a target="_blank" style="text-decoration: none" href="https://www.facebook.com/synerghetic.je">
-                <img style="height:20px; width:auto; padding-left:2px; padding-top: 2px" src="img/fb.png"/></a>
+                <img style="height:20px; width:auto; padding-left:2px; padding-top: 2px" src="https://signature-mail-lvde.herokuapp.com/img/fb.png"/></a>
                 <a target="_blank" style="text-decoration: none" href="https://instagram.com/lavoixdelenfant/">
-                <img style="height:20px; width:auto; padding-left:2px; padding-top: 2px" src="img/insta.png"/></a>
+                <img style="height:20px; width:auto; padding-left:2px; padding-top: 2px" src="https://signature-mail-lvde.herokuapp.com/img/insta.png"/></a>
             </p>
         </td>
     </tr>
