@@ -34,7 +34,7 @@ if (isset($_POST['submitDl']))
     <input name="poste" id="poste" type="text" value="<?php if(isset($_POST['poste'])): echo $_POST['poste']; endif; ?>" /><br /><br />
     <label for="email">Email</label>
     <input name="email" id="email" type="text" value="<?php if(isset($_POST['email'])): echo $_POST['email']; endif; ?>" /><br /><br />
-    <label for="phone">Phone (format : "+33 (0)x xx xx xx xx")</label>
+    <label for="phone">Téléphone (format : "+33 (0)x xx xx xx xx")</label>
     <input name="phone" id="phone" type="text" value="<?php if(isset($_POST['phone'])): echo $_POST['phone']; endif; ?>" /><br /><br />
     <label for="phonedirect">Ligne directe (format : "+33 (0)x xx xx xx xx")</label>
     <input name="phonedirect" id="phonedirect" type="text" value="<?php if(isset($_POST['phonedirect'])): echo $_POST['phone']; endif; ?>" /><br /><br />
