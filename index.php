@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['submitDl']))
 {
-    header("Content-disposition:filename=signature-lavoixdelenfant.htm");
+    header("Content-disposition:filename=signature-lavoixdelenfant.html");
     header("Content-type:application/octetstream");
     echo urldecode($_POST['signature']);
     exit(0);
